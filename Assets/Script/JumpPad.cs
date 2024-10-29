@@ -8,7 +8,6 @@ public class JumpPad : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("충돌안됌?");
         if (other.CompareTag("Player"))
         {
             // 플레이어의 Rigidbody 가져오기
