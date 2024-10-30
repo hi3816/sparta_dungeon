@@ -21,7 +21,7 @@ A,S,D,F키로 움직일 수 있습니다
 ![image](https://github.com/user-attachments/assets/9d2abb40-f09b-48d9-8d69-675760c6ba95)
 
 버섯을 들고 먹을 수 있습니다
-(마우스 왼쪽)
+(마우스 왼쪽버튼 클릭)
 
 
 
