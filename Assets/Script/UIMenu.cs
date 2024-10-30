@@ -34,30 +34,6 @@ public class UIMenu : MonoBehaviour
                 isMove = false; // 애니메이션 종료 후 이동 상태 변경
             });
         }
-
-        //if (isMove == false)
-        //{
-        //    isMove = true;
-        //    if (!objMenu.activeSelf)
-        //    {
-
-        //        objMenu.SetActive(true);
-        //        objMenu.transform.DOLocalMoveY(objMenu.transform.localPosition.y - 550f, 0.5f).SetEase(Ease.OutCubic).OnComplete(() =>
-        //        {
-        //            isMove = false;
-        //        });
-        //    }
-        //}
-        //else
-        //{
-        //    if (isMove == false)
-        //    objMenu.transform.DOLocalMoveY(objMenu.transform.localPosition.y + 550f, 0.5f).SetEase(Ease.OutCubic).OnComplete(() =>
-        //    {
-        //        objMenu.SetActive(false);
-        //        isMove = false;
-        //    });
-
-        //}
     }
 
 }

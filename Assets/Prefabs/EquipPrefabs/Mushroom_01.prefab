@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3997089338131543283}
+  - component: {fileID: 6905484223324025467}
+  - component: {fileID: 2475405440404699935}
   m_Layer: 8
   m_Name: Mushroom_01
   m_TagString: Untagged
@@ -32,6 +34,41 @@ Transform:
   - {fileID: 5642728826976659886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 16.278, y: 5.245, z: -15}
+--- !u!95 &6905484223324025467
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695274929919374920}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 283dac8d02c182849938bfa5f92cd6b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2475405440404699935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695274929919374920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b77ac852a4dc904bac78e7cdbe90f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eatRate: 2
+  data: {fileID: 11400000, guid: 556c01d738d6bac4b9e539357ae7436f, type: 2}
 --- !u!1 &8011140677051713499
 GameObject:
   m_ObjectHideFlags: 0

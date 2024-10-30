@@ -19,14 +19,14 @@ public class Equipment : MonoBehaviour
 
     public void EquipNew(ItemData data)
     {
-        Instantiate(data.equipPrefab, HeldParent);
+        curHeld = Instantiate(data.equipPrefab, HeldParent).GetComponent<Equip>();
     }
 
     public void OnEatInput(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Started && curHeld != null)
+        if (context.phase == InputActionPhase.Performed && curHeld != null)
         {
-            Debug.Log("ธิพ๎");
+            curHeld.OnEatInput();
         }
     }
 }
