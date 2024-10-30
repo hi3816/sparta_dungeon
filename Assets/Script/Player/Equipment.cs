@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Equipment : MonoBehaviour
 {
-    public Heldtem curHeld;
+    public Equip curHeld;
     public Transform HeldParent;
 
     private PlayerController controller;
@@ -12,11 +14,19 @@ public class Equipment : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<PlayerController>();
-        CharacterManager.Instance.Player.addItem += HeldNew;
+        CharacterManager.Instance.Player.addItem += EquipNew;
     }
 
-    public void HeldNew()
+    public void EquipNew(ItemData data)
     {
-        Instantiate(CharacterManager.Instance.Player.itemData.equipPrefab, HeldParent);
+        Instantiate(data.equipPrefab, HeldParent);
+    }
+
+    public void OnEatInput(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started && curHeld != null)
+        {
+            Debug.Log("ธิพ๎");
+        }
     }
 }
